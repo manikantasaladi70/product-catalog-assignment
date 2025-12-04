@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Catalog</title>
+
+  <style>
+    body { font-family: Arial, sans-serif; padding:20px; }
+    .search { margin-bottom: 12px; padding: 6px; width: 250px; }
+    .product-grid { display: flex; flex-wrap: wrap; gap: 12px; }
+    .product-card {
+      width: 160px; border: 1px solid #ccc; padding: 10px;
+      border-radius: 8px; cursor: pointer; text-align: center;
+    }
+    .product-card img { width: 100%; height: 100px; object-fit: cover; }
+
+    .modal-overlay {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5); display: flex;
+      align-items: center; justify-content: center;
+    }
+    .modal-body {
+      background: white; padding: 20px; width: 300px;
+      border-radius: 10px;
+    }
+    .hidden { display: none; }
+  </style>
+</head>
+
+<body>
+  <h1>Product Catalog</h1>
+
+  <input
+    class="search"
+    data-cy="search-bar"
+    placeholder="Search products..."
+  />
+
+  <div class="product-grid" id="productGrid"></div>
+
+  <!-- MODAL -->
+  <div id="modal" class="hidden">
+    <div class="modal-overlay" id="modalOverlay" data-cy="product-modal">
+      <div class="modal-body">
+        <img id="modalImg"
+             style="width:100%;height:180px;object-fit:cover;margin-bottom:10px" />
+        <h2 id="modalName"></h2>
+        <p id="modalPrice"></p>
+        <p id="modalDesc"></p>
+
+        <button id="closeBtn" data-cy="close-button">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

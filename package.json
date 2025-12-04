@@ -1,0 +1,12 @@
+{
+  "name": "product-catalog",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npx http-server ./src -p 4200",
+    "build": "echo 'Build step placeholder'"
+  },
+  "devDependencies": {
+    "cypress": "^12.0.0",
+    "http-server": "^14.1.1"
+  }
+}

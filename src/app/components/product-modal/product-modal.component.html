@@ -1,0 +1,9 @@
+<div class="modal-overlay" data-cy="product-modal">
+  <div class="modal-body">
+    <img [src]="product.image" class="large-img" />
+    <h2>{{ product.name }}</h2>
+    <p>₹{{ product.price }}</p>
+    <p>{{ product.description }}</p>
+    <button data-cy="close-button" (click)="closeModal()">Close</button>
+  </div>
+</div>

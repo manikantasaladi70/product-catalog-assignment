@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Mouse",
+    "price": 25.0,
+    "image": "assets/images/mouse.jpg",
+    "description": "An ergonomic wireless mouse with long battery life."
+  },
+  {
+    "id": 2,
+    "name": "Mechanical Keyboard",
+    "price": 99.99,
+    "image": "assets/images/keyboard.jpg",
+    "description": "Durable keyboard with RGB backlighting."
+  },
+  {
+    "id": 3,
+    "name": "USB-C Hub",
+    "price": 45.0,
+    "image": "assets/images/hub.jpg",
+    "description": "High-speed USB-C hub with multiple ports."
+  },
+  {
+    "id": 4,
+    "name": "Bluetooth Speaker",
+    "price": 55.0,
+    "image": "assets/images/speaker.jpg",
+    "description": "Portable Bluetooth speaker with deep bass."
+  },
+  {
+    "id": 5,
+    "name": "HD Web Camera",
+    "price": 30.0,
+    "image": "assets/images/webcam.jpg",
+    "description": "Full HD webcam ideal for meetings and streaming."
+  }
+]
